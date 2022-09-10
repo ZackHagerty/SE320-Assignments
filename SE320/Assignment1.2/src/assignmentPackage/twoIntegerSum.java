@@ -14,19 +14,19 @@ public class twoIntegerSum {
 		
 		do {
 			try {
-				System.out.print("Enter two integers: ");
+				System.out.print("Enter two integers separated by spaces: ");
 				number1 = input.nextInt();
 				number2 = input.nextInt();
 				
 				sum = number1 + number2;
 				
-				System.out.println("The sum of the numbers entered is, " + sum + "\n\n");
+				System.out.println("The sum of the numbers entered is " + sum + "\n\n");
 			
 				continueInput = false;
 			}
 			catch (InputMismatchException ex) {
 				System.out.println("\n \nTry again .(" +
-						"Incorrect input: two integers are required)\n");
+						"Incorrect input: two integers separated by spaces are required)\n");
 				input.nextLine();
 			}
 		} while(continueInput);

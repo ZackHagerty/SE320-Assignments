@@ -1,4 +1,5 @@
 package assignmentPackage;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class BigArrayIndexFinder {
@@ -21,13 +22,17 @@ public class BigArrayIndexFinder {
 			System.out.print("Enter index: ");
 			chosenIndex = input.nextInt();
 				
-			System.out.println("The value at the chosen index is, " + array[chosenIndex] + "\n\n");
+			System.out.println("The value at the chosen index is " + array[chosenIndex] + "\n\n");
 			
 			}
 			catch (ArrayIndexOutOfBoundsException ex) {
 				System.out.println("\n \nOut of Bounds\n");
 				input.nextLine();
 			}
+		catch (InputMismatchException ex) {
+				System.out.println("\n \nInvalid Input.\n");
+				input.nextLine();
+		}
 
 	}
 }
