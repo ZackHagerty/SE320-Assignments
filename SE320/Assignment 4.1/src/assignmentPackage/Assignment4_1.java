@@ -22,7 +22,7 @@ public class Assignment4_1 {
 		
 		copyOne.removeAll(copyTwo);
 		
-		System.out.println("Difference of Hash Sets: " + copyOne);
+		System.out.println("Difference of Hash Sets (SetOne - SetTwo): " + copyOne);
 		
 	}
 	
@@ -48,11 +48,15 @@ public class Assignment4_1 {
 		setOne.add("Kevin");
 		setOne.add("Michael");
 		
+		System.out.println("Set One: " + setOne);
+		
 		setTwo.add("George");
 		setTwo.add("Katie");
 		setTwo.add("Kevin");
 		setTwo.add("Michelle");
 		setTwo.add("Ryan");
+		
+		System.out.println("Set Two: " + setTwo);
 		
 		findUnion(setOne, setTwo);
 		findDifference(setOne, setTwo);
