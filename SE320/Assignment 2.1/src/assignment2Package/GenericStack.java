@@ -38,7 +38,7 @@ public class GenericStack<E> {
 		
 		if(size == capacity)
 		{
-			E[] expandedArray = (E[]) new Object[this.capacity * 2];
+			E[] expandedArray = (E[]) new Object[getSize() * 2];
 			System.arraycopy(this.array, 0, expandedArray, 0, this.array.length);
 			this.array = expandedArray;
 		}
